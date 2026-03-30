@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "윤영수산(구 오미수산)",
+  title: "가을 유통",
   description: "신선한 수산물을 만나보세요",
 };
 

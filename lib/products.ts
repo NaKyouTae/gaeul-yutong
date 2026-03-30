@@ -21,7 +21,7 @@ function calculateDiscount(original: number, sale: number): number {
   return Math.round(((original - sale) / original) * 100);
 }
 
-// 카테고리별 이미지 인덱스 범위 (hepungImages 배열에서 사용할 인덱스들)
+// 카테고리별 이미지 인덱스 범위 (images 배열에서 사용할 인덱스들)
 // 각 카테고리에 적합한 이미지 인덱스를 배열로 정의
 const categoryImageIndices: Record<string, number[]> = {
   '냉동식품': [8, 10, 19, 48, 50, 51, 52, 53, 54, 59, 60, 61, 70], // 멸치회급냉(8), 손질오징어(10), 손질순살갈치(19), 깐중하새우(48), 보리새우(50), 참치뱃살(51), 추어탕(52,53), 백고동자숙(54), 장어초벌(59), 고동회(60), 물회육수(61), 물가자미급냉(70)
@@ -43,7 +43,7 @@ function generateProducts(category: string, count: number): Product[] {
   // 사용 가능한 인덱스가 없으면 전체 이미지 배열에서 선택
   const allIndices = availableIndices.length > 0 
     ? availableIndices 
-    : Array.from({ length: 75 }, (_, i) => i); // hepungImages 배열 길이 (쪽갈비, 미니족발, 중복 전복 제거 후)
+    : Array.from({ length: 75 }, (_, i) => i); // images 배열 길이
   
   // 사용 가능한 고유 이미지 수 계산
   const uniqueUrls = new Set<string>();

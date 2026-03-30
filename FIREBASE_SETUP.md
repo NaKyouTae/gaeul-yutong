@@ -3,7 +3,7 @@
 ## 1. Firebase 콘솔에서 Firestore 활성화
 
 1. [Firebase Console](https://console.firebase.google.com/)에 접속
-2. 프로젝트 `yoonyoung-susan` 선택
+2. 프로젝트 `gaeul-yutong` 선택
 3. 왼쪽 메뉴에서 **"Cloud Firestore"** 클릭
 4. **"데이터베이스 만들기"** 버튼 클릭
 5. 데이터베이스 모드 선택:

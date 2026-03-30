@@ -84,7 +84,7 @@ export default function Header({ onCategorySelect }: HeaderProps) {
           onClick={handleLogoClick}
           className="text-2xl font-bold text-blue-600 hover:text-blue-800"
         >
-          윤영수산(구 오미수산)
+          가을 유통
         </button>
       </div>
 
